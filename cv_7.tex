@@ -1,0 +1,130 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% "ModernCV" CV and Cover Letter
+% LaTeX Template
+% Version 1.11 (19/6/14)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% Original author:
+% Xavier Danaux (xdanaux@gmail.com)
+%
+% License:
+% CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
+%
+% Important note:
+% This template requires the moderncv.cls and .sty files to be in the same 
+% directory as this .tex file. These files provide the resume style and themes 
+% used for structuring the document.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass[11pt,a4paper,sans]{moderncv} % Font sizes: 10, 11, or 12; paper sizes: a4paper, letterpaper, a5paper, legalpaper, executivepaper or landscape; font families: sans or roman
+\usepackage[french]{babel}
+\usepackage[utf8]{inputenc}
+\moderncvstyle{classic} % CV theme - options include: 'casual' (default), 'classic', 'oldstyle' and 'banking'
+\moderncvcolor{orange} % CV color - options include: 'blue' (default), 'orange', 'green', 'red', 'purple', 'grey' and 'black'
+
+\usepackage[scale=1]{geometry} % Reduce document margins
+\geometry{hmargin=1.9cm,vmargin=1.5cm}
+\setlength{\hintscolumnwidth}{2,2cm} % Uncomment to change the width of the dates column
+%\setlength{\makecvtitlenamewidth}{10cm} % For the 'classic' style, uncomment to adjust the width of the space allocated to your name
+
+%----------------------------------------------------------------------------------------
+%	NAME AND CONTACT INFORMATION SECTION
+%----------------------------------------------------------------------------------------
+\setlength{\hintscolumnwidth}{2cm}
+\setlength{\separatorcolumnwidth}{1em}
+
+\firstname{Fabien} % Your first name
+\familyname{Feraud} % Your last name
+
+% All information in this block is optional, comment out any lines you don't need
+\title{Recherche stage 2 à 3 mois  : Juin à Août 2018}
+\address{66 allée du Tiers Etat}{Montpellier, France 34000}
+\mobile{06 76 53 32 58}
+\email{fabferaud@orange.fr}
+\homepage{www.linkedin.com/in/fabferaud} {www.linkedin.com/in/fabferaud} % The first argument is the url for the clickable link, the second argument is the url displayed in the template - this allows special characters to be displayed such as the tilde in this example
+%\extrainfo{additional information}
+%\photo[70pt][0.4pt]{pictures/daniele} % The first bracket is the picture height, the second is the thickness of the frame around the picture (0pt for no frame)
+%\quote{Recherche d'un stage pour l'été 2017 (Juin, Juillet, Août)}
+
+%----------------------------------------------------------------------------------------
+
+\begin{document}
+
+\makecvtitle % Print the CV title
+\vspace{-1cm} 
+
+
+\begin{minipage}[t]{0.2\linewidth}
+\setlength{\maincolumnwidth}{\linewidth-\leftskip-\rightskip}
+\setlength{\hintscolumnwidth}{0cm}
+
+\section*{Programmation}
+\begin{flushleft}
+C++ (lib SFML), C, C\#, Java, SQL, Sage, Scheme, Python, \LaTeX, JavaScript, TypeScript, Git
+\end{flushleft}
+
+\section*{Web}
+\begin{flushleft}
+HTML, Javascript (JQuery), CCS (Bootstrap), PHP, Twig
+\end{flushleft}
+
+\section*{Technologies}
+\begin{flushleft}
+Silex (PHP), NodeJS, Express, REST, Android Studio, SOAP, RMI, Jest, JUnit
+\end{flushleft}
+
+\section*{Base de données}
+\begin{flushleft}
+Oracle, MySQL, MongoDB
+\end{flushleft}
+
+\section*{Langue}
+Anglais niveau B1
+
+\section*{Centres d'intérêts}
+\begin{flushleft}
+Sport (VTT, Footing, Tennis), Jeux vidéos, Game Jam, Développement projets personnels
+\end{flushleft}
+\end{minipage}
+\hfill
+\begin{minipage}[t][\textheight-3cm]{0.75\linewidth}
+\setlength{\maincolumnwidth}{\linewidth-\leftskip-\rightskip-\separatorcolumnwidth-\hintscolumnwidth}
+\section{Formations}
+
+\cventry{Actuel}{Master 1 Architecture et Ingénierie du Logiciel et du Web (AIGLE)}{Université de Montpellier}{}{}{}
+\cventry{2017}{Licence 3 Cursus Master Ingénierie specialité Informatique}{Université de Montpellier}{}{}{}
+\cventry{2014}{Bac S Science de l'Ingénieur \textit{Spécialité Informatique et Science du Numérique}}{Lycée Adam de Craponne}{Salon-de-provence}{\textit{Mention Bien}}{}  % Arguments not required can be left empty
+
+
+\section{Expériences professionnelles}
+
+\cventry{Juin/Juill 2017 (7sem)}{Stagiaire développement web}{\textsc{Armada Fleet Services}}{Langlade (30)}{}{Développement d'un CMS personnalisé pour le site vitrine de l'entreprise et d'un outil d'aide à la gestion d'un parc automobile. Utilisation du framework Silex, du moteur de template Twig et d'une architecture MVC.}
+\vfill
+\cventry{Mai 2016 \\(6 sem)}{Stagiaire recherche cryptographie}{\textsc{Laboratoire LIRMM}}{Montpellier (34)}{}{Etude de la cryptographique asymétrique. Apprentissage du cryptosystème ElGamal (logarithme discret). Implémentation d'algorithmes d'\og attaques \fg{} pour comprendre les mécanismes de défense. Programmation SAGE.}
+\vfill
+\cventry{2015-2017 (5,5 mois)}{Équipier polyvalent}{\textsc{McDonald's}}{Grau-du-roi (30)}{}{Rapidité, précision et organisation. Travailler proprement, sous pression et savoir prendre des initiatives.}
+
+\section{Projets universitaires}
+
+\renewcommand{\listitemsymbol}{-~} % Changes the symbol used for lists
+
+\cventry{Année 2017/2018}{Application de bouliste en réalité augmenté (déployé sur PlayStore)}{}{}{}{Application mobile de gestion et d'analyse de partie de pétanque. Résolution du conflit de distance grâce à l'appareil photo. Serveur NodeJS et MongoDB sur Raspberry avec API REST. Application mobile avec Ionic 3 et TypeScript. Traitement d'image avec openCV JS.}
+\vfill
+\cventry{Fév - Avril 2018\\(3 mois)}{Application android de ville connectée}{}{}{}{L'utilisateur peut accéder à l'actualité de sa ville, rejoindre des réseaux ou consulter les commerces et recevoir des offres. Base de données Firebase. Site internet commerçant en React JS.}
+\vfill
+\cventry{Année 2016/2017}{Création interactive d'une base de connaissances à travers un GWAP mobile}{}{}{}{ Application en C\# sous Unity. Serveur Java. Algorithme de génération de relation. Application web de gestion administrateur MVC. Utilisation PHP, HTML, CSS, JS et DB MySQL.}
+\vfill
+\cventry{Jan - Avril 2016\\(4 mois)}{Solveur et générateur de grille d'un casse-tête nommé Nurikabe}{}{}{}{ Développement d'algorithmes en analysant les règles du jeu. Implémentation de ces algorithmes et l'interface en C++ avec QtCreator.}
+
+\end{minipage}
+\end{document}
+
+
+
